@@ -1,5 +1,5 @@
 # Specify phone tech before including full_phone
-$(call inherit-product, vendor/cm/config/gsm.mk)
+$(call inherit-product, vendor/Gummy/config/gsm.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := t0lteatt
@@ -9,14 +9,14 @@ TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/Gummy/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/t0lteatt/full_t0lteatt.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := t0lteatt
-PRODUCT_NAME := cm_t0lteatt
+PRODUCT_NAME := tg_t0lteatt
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SAMSUNG-SGH-I317
 PRODUCT_MANUFACTURER := samsung
